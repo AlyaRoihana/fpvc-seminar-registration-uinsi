@@ -2,7 +2,9 @@
 
 Laravel 11 + Sanctum + MySQL/MariaDB. Tampilan memakai Blade dan Tailwind CSS via CDN (tanpa npm/Vite). QR e-ticket dirender sebagai SVG memakai `endroid/qr-code`.
 
-Dokumen analisis dan requirement ada di folder [`markdown/`](markdown/).
+Dokumen konteks wajib (`REQUIREMENTS.md`, `ARCHITECTURE.md`, `RULES.md`, `TASKS.md`, `PRD.md`, `code_review.md`) tersedia di **root repository** sesuai deliverable tugas. Salinan arsipnya ada di folder [`markdown/`](markdown/).
+
+Panduan demonstrasi edge case untuk presentasi final ada di [`DEMO.md`](DEMO.md).
 
 ## Persyaratan
 
@@ -187,7 +189,7 @@ php artisan migrate:fresh --seed
 
 ## Registrasi atomik
 
-`app/Services/SeminarRegistrationService.php` sudah diisi sesuai panduan di [`markdown/code_review.md`](markdown/code_review.md).
+`app/Services/SeminarRegistrationService.php` sudah diisi sesuai panduan di [`code_review.md`](code_review.md).
 
 Alurnya:
 

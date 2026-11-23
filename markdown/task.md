@@ -19,6 +19,8 @@
 - [x] Feature test: daftar sukses / penuh / duplikat
 - [x] Stress test script (100 paralel)
 - [x] README + dokumentasi
+- [x] Dokumen konteks wajib di root repository
+- [x] Panduan demo edge case untuk presentasi final (DEMO.md)
 
 ## In Progress
 - [ ] (kosong)
