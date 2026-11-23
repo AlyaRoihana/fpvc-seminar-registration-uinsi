@@ -1,0 +1,9 @@
+1. pelajari konteks semua file markdown di root project ini (PRD.md, REQUIREMENTS.md, ARCHITECTURE.md, RULES.md, TASKS.md, code_review.md). jangan buat apapun dulu tanpa konfirmasi dari saya.
+2. Setelah paham, eksekusi Task 1: Setup Project & Database. Buat migration untuk tabel 'users', 'seminars', dan 'registrations' PERSIS sesuai ERD di ARCHITECTURE.md (termasuk constraint CHECK dan UNIQUE). Lalu buat Model beserta relasinya.
+3. Eksekusi Task 2: Buat DatabaseSeeder sesuai TASKS.md. Buat 1 user panitia, 1 user mahasiswa, dan 1 seminar "Seminar Moderasi Beragama" dengan capacity 5 dan registered_count 0.
+4. Eksekusi Task 3: Buat AuthController (register, login, logout) menggunakan Laravel Sanctum dan Form Request untuk validasi. Ikuti standar response JSON di RULES.md.
+5. Eksekusi Task 4: Buat SeminarController (list, detail, create) dan TicketController (checkin QR). Pastikan validasi role: hanya panitia yang bisa create seminar dan checkin.
+6. PENTING (The 30%): Tolong buatkan file app/Services/SeminarRegistrationService.php KOSONG dengan kerangka method register(Seminar $seminar, User $user) yang masih melempar RuntimeException('NOT_IMPLEMENTED'). JANGAN tulis logika database-nya, karena saya (manusia) yang akan mengisi logika atomic transaction-nya secara manual sesuai code_review.md.
+7. Eksekusi Task 5: Buat view Blade (Tailwind CSS via CDN, jangan pakai npm/Vite). Buat layout utama (app.blade.php), halaman daftar seminar (seminars/index.blade.php) dengan tombol "Daftar Seminar", dan halaman e-ticket (tickets/show.blade.php).
+8. Eksekusi Task 6: Buat file PHPUnit Feature Test untuk Auth dan Seminar (test_register_success, test_register_seats_full, test_register_duplicate_user). Gunakan RefreshDatabase.
+9. Setelah semua selesai, jangan lupa buatkan dokumentasi singkat cara menjalankan project ini di README.md jika belum ada.
